@@ -51,9 +51,9 @@
             padding: 0 !important;
         }
     </style>
-<!--    <link rel="stylesheet" id="genesis-sample-theme-css"-->
-<!--          href="http://usemeforfree.com/wp-content/themes/genesis-yellow/style.css?ver=2.2.0" type="text/css"-->
-<!--          media="all"> -->
+    <!--    <link rel="stylesheet" id="genesis-sample-theme-css"-->
+    <!--          href="http://usemeforfree.com/wp-content/themes/genesis-yellow/style.css?ver=2.2.0" type="text/css"-->
+    <!--          media="all"> -->
     <link rel="stylesheet" id="genesis-sample-theme-css"
           href="style.css" type="text/css"
           media="all">
@@ -105,9 +105,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body class="home page page-id-5 page-template page-template-parallax-template page-template-parallax-template-php header-image header-full-width full-width-content"
-      itemscope="" itemtype="http://schema.org/WebPage" style="
-    /* width: 100vw; */
-">
+      itemscope="" itemtype="http://schema.org/WebPage">
 <div class="site-container">
     <section><h2 class="screen-reader-text">Skip links</h2>
         <ul class="genesis-skip-link">
@@ -116,9 +114,16 @@
             <li><a href="#genesis-footer-widgets" class="screen-reader-shortcut"> Skip to footer</a></li>
         </ul>
     </section>
-    <div id="sticky-wrapper" class="sticky-wrapper"">
-        <header class="site-header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <div id="sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 112px;">
+        <header class="site-header" itemscope="" itemtype="http://schema.org/WPHeader"
+                style="width: 375px; position: fixed; top: 0px; z-index: auto;">
             <div class="wrap">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <div class="title-area"><h1 class="site-title" itemprop="headline"><a href="http://usemeforfree.com/">JG
                             Hause Construction</a></h1>
                     <p class="site-description" itemprop="description">Custom Homes</p></div>
@@ -149,6 +154,10 @@
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a
                                         href="http://usemeforfree.com/other-services/" itemprop="url"><span
                                             itemprop="name">Other Services</span></a></li>
+                            <li id="menu-item-126"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126"><a
+                                        href="http://usemeforfree.com/our-partners/" itemprop="url"><span
+                                            itemprop="name">Our Partners</span></a></li>
                         </ul>
                     </div>
                 </nav>
@@ -161,12 +170,12 @@
                  style="background-image:url(http://usemeforfree.com/wp-content/uploads/2015/09/Layer-3.png);">
                 <div class="home-intro">
                     <div class="wrap">
-                        <div id="one-third-first" class="one-third first"><p>J.G. Hause</p>
+                        <div class="one-third first"><p>J.G. Hause</p>
                             <p>Custom Home Construction</p>
                             <p><a href="http://usemeforfree.com/wp-content/uploads/2015/09/Logo.png"><img
                                             class="alignnone size-full wp-image-104"
-                                            src="http://usemeforfree.com/wp-content/uploads/2015/09/Logo.png" alt="logo">
-<!--                                            width="165" height="86"--></a></p>
+                                            src="http://usemeforfree.com/wp-content/uploads/2015/09/Logo.png" alt="logo"
+                                            width="165" height="86"></a></p>
                         </div>
                         <div class="one-third "><p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec. Blandit
                                 orci porttitor semper. Arcu phasellus tortor enim mi nisi praesent dolor adipiscing.
@@ -193,6 +202,7 @@
                                 mi sed nascetur cep aliquet augue varius tempus lobortis porttitor accumsan consequat
                                 adipiscing lorem dolor.</p>
                             <p>nascetur cep aliquet augue varius tempus lobortis porttitor accumsan consequat</p>
+                            <p><a href="http://jghause-custom-homes:8888/our-projects/">Read More</a></p>
                         </div>
                     </div>
                 </div>
@@ -202,13 +212,12 @@
                 <div class="wrap">
                     <div class="partners">
                         <div class="parallax-info">
-                            <h1>Our Partners<br>
-                                Nascetur eu nibh</h1>
+                            <h1>Our Partners</h1>
                             <p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec. Blandit orci porttitor
                                 semper. Arcu phasellus tortor enim mi nisi praesent dolor adipiscing. Integer mi sed
                                 nascetur cep aliquet augue varius tempus lobortis porttitor accumsan consequat
                                 adipiscing lorem dolor.</p>
-                            <p><a href="http://jghause-custom-homes:8888/our-projects/">Read More</a></p>
+                            <p><a href="http://usemeforfree.com/our-partners/">Read More</a></p>
                         </div>
                     </div>
                 </div>
@@ -222,24 +231,21 @@
                         <h2>Nascetur eu nibh</h2>
                         <p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec. Blandit orci porttitor semper.
                             Arcu phasellus tortor enim mi nisi praesent dolor adipiscing. Integer mi sed nascetur cep
-                            aliquet augue varius tempus lobortis porttitor accumsan consequat adipiscing lorem
-                            dolor.</p>
+                            aliquet augue varius tempus lobortis porttitor accumsan consequat ...</p>
                     </div>
                     <div class="one-third">
                         <img src="http://usemeforfree.com/wp-content/uploads/2015/09/employee-headshot-Philadelphia-185.png">
                         <h2>Nascetur eu nibh</h2>
                         <p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec. Blandit orci porttitor semper.
                             Arcu phasellus tortor enim mi nisi praesent dolor adipiscing. Integer mi sed nascetur cep
-                            aliquet augue varius tempus lobortis porttitor accumsan consequat adipiscing lorem
-                            dolor.</p>
+                            aliquet augue varius tempus lobortis porttitor accumsan consequat ...</p>
                     </div>
                     <div class="one-third">
                         <img src="http://usemeforfree.com/wp-content/uploads/2015/09/Philadelphia-business-headshot-60.png">
                         <h2>Nascetur eu nibh</h2>
                         <p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec. Blandit orci porttitor semper.
                             Arcu phasellus tortor enim mi nisi praesent dolor adipiscing. Integer mi sed nascetur cep
-                            aliquet augue varius tempus lobortis porttitor accumsan consequat adipiscing lorem
-                            dolor.</p>
+                            aliquet augue varius tempus lobortis porttitor accumsan consequat ...</p>
                     </div>
                 </div>
             </div>
@@ -315,16 +321,19 @@
                 </section>
                 <section id="widget_sp_image-2" class="widget widget_sp_image">
                     <div class="widget-wrap"><img width="53" height="53" alt="" class="attachment-full"
+                                                  style="max-width: 100%;"
                                                   src="http://usemeforfree.com/wp-content/uploads/2016/10/facebook-1.png">
                     </div>
                 </section>
                 <section id="widget_sp_image-3" class="widget widget_sp_image">
                     <div class="widget-wrap"><img width="53" height="53" alt="" class="attachment-full"
+                                                  style="max-width: 100%;"
                                                   src="http://usemeforfree.com/wp-content/uploads/2016/10/Google.png">
                     </div>
                 </section>
                 <section id="widget_sp_image-4" class="widget widget_sp_image">
                     <div class="widget-wrap"><img width="53" height="53" alt="" class="attachment-full"
+                                                  style="max-width: 100%;"
                                                   src="http://usemeforfree.com/wp-content/uploads/2016/10/Twitter-1.png">
                     </div>
                 </section>
@@ -356,3 +365,208 @@
 
 </body>
 </html>
+
+<!DOCTYPE>
+<html>
+<head>
+    <script>
+        //*** Level 0: (1) Do Math
+        //        function do_math(num1, num2, operator) {
+        //            if(operator == "+") {
+        //                return (num1 + num2);
+        //            } else if(operator == "-") {
+        //                return (num1 - num2);
+        //            } else if(operator == "*" || operator == "x" || operator == "X") {
+        //                return (num1 * num2);
+        //            } else if(operator == "/") {
+        //                return (num1 / num2);
+        //            }
+        //        }
+        //        console.log(do_math(2, 3, "-"));
+        //        console.log(do_math(2, 3, "+"));
+        //        console.log(do_math(3, 3, "/"));
+        //        console.log(do_math(2, 3, "X"));
+
+        //*** Level 0: (2) Random Number or Array Element
+        //        var myArray = [0,1,2,3,4,5,6,7,8,9,10];
+        //        function random_range(start_num, end_num) {
+        //            if (Array.isArray(start_num)){
+        //                var arrLength = start_num.length;
+        //                var randomNum = start_num[Math.floor(Math.random() * arrLength)];
+        //                return start_num[randomNum];
+        //            } else {
+        //                var randomNum = Math.floor(Math.random() * (end_num - start_num)+start_num);
+        //                return randomNum;
+        //            }
+        //        }
+        //        console.log("This one foolio ", random_range(myArray));
+        //        console.log("This one foolio ", random_range(5,10));
+        //
+        //        //*** Level 0: (3) Math Combo
+        //        function cocococombomath(num1, num2, num3, num4, num5) {
+        //            return ((((num1 * num2) + num3) / num4) - num5);
+        //        }
+        //        console.log(cocococombomath(3, 2, 6, 3, 5));
+
+        //*** Level 0: (4) Find Middle of String
+        //        function find_middle_letters(string) {
+        //            var position;
+        //            var length;
+        //            if(string.length % 2 != 0) {
+        //                position = string.length / 2;
+        //                length = 1;
+        //            } else {
+        //                position = string.length / 2 - 1;
+        //                length = 2;
+        //            }
+        //            return string.substring(position, position + length);
+        //        }
+        //        console.log(find_middle_letters("gobble"));
+
+        //*** Level 0: (5) Invert Positive Number
+        //        function invertPossitiveNumber(num) {
+        //            if(num < 0){
+        //                return num;
+        //            } else if(isNaN(num)) {
+        //                return false;
+        //            } else {
+        //                return num -= num * 2;
+        //            }
+        //        }
+        //        console.log(invertPossitiveNumber(10000));
+
+        //*** Level 1: (1) Total Reverse
+        //        var testArray = [0,1,2,3,4,5,6,7,8,9,10];
+        //        function totalReverse(arr) {
+        //            var newArr = [];
+        //            for (var i = arr.length-1; i >= 0; i--) {
+        //                newArr.push(arr[i]);
+        //
+        //            }
+        //            return newArr;
+        //
+        //        }
+        //        console.log(totalReverse(testArray));
+
+        //*** Level 1: (2) One to Multi
+        //        var exampleArray = ['hello', 34, true, false, 'goodbye', 56, 12, '25', true];
+        //        var sortedArray = [];
+        //        function arraySorter(param) {
+        //            var str = [];
+        //            var booly = [];
+        //            var num = [];
+        //            for(var i = 0; i < param.length; i++){
+        //                if (typeof param[i] === "boolean"){
+        //                    booly.push(param[i]);
+        //                } else if(typeof param[i] === "string") {
+        //                    str.push(param[i]);
+        //                } else {
+        //                    num.push(param[i]);
+        //                }
+        //            }
+        //            sortedArray.push(str);
+        //            sortedArray.push(num);
+        //            sortedArray.push(booly);
+        //            return sortedArray;
+        //        }
+        //        console.log(arraySorter(exampleArray));
+
+        //*** Level 1: (3) Array Sort
+        //        arr_o_strings = ["oogidy", "boogidy", "noodlehorn", "chickenhawk"];
+        //        function sorted_mess(stringed_arr) {
+        //            do{
+        //            var swapped = false;
+        //                for (var i = 0; i < stringed_arr.length; ++i) {
+        //                    if(stringed_arr[i] > stringed_arr[i+1]) {
+        //                        var temp = stringed_arr[i];
+        //                        stringed_arr[i] = stringed_arr[i+1];
+        //                        stringed_arr[i+1] = temp;
+        //                        swapped = true;
+        //                    }
+        //                }
+        //            }
+        //            while(swapped == true);
+        //        }
+        //        console.log("BEFORE: "+ arr_o_strings);
+        //        console.log("THIS GUY: "+ sorted_mess(arr_o_strings));
+        //        console.log("AFTER: "+ arr_o_strings);
+
+        //*** Level 1: (4) FizzBuzz
+        //        function FuzzBizz () {
+        //
+        //            for(var i = 0; i <= 100; i++) {
+        //                if (i % 3 === 0 && i % 5 === 0) {
+        //                    console.log("FizzBuzz" + i);
+        //                } else if (i % 5 === 0) {
+        //                    console.log("Buzz" + i);
+        //                } else if (i % 3 === 0 ){
+        //                    console.log("Fizz" + i);
+        //                }
+        //            }
+        //        }
+        //        console.log("FoozBooz: "+ FuzzBizz ());
+
+        //*** Level 1: (5) Randomize Array
+        //        var inputAnythingArray = [5,3,2,5,1];
+        //        function randomizeArray(Arraymatey) {
+        //            for(var i = 0; i < Arraymatey.length; i++){
+        //                var randIndex = Math.round(Math.random() * Arraymatey.length);
+        //                var temp = Arraymatey.pop(randIndex);
+        //                Arraymatey.splice(randIndex, 0, temp);
+        //                console.log("Result: " +i + "THIS: " + Arraymatey);
+        //            }
+        //        }
+        //        console.log(randomizeArray(inputAnythingArray));
+        //        console.log(inputAnythingArray);
+
+        //*** Level 1: (6) Bipolar Loop
+        //        function bipolarBear(up,down) {
+        //            for (up,down; up <= down, down >= up; up++, down--) {
+        //                console.log("Up is:" + up + " Down is: " + down);
+        //            }
+        //        }
+        //        bipolarBear(0,50);
+
+        //*** Level 2: (1) Bigger Words
+        //        var bananaString = "adorkable";
+        //        var arrOStr = ["cat", "moo", "sampson gets you lifted", "dark-hadouken"];
+        //        var emptyNewArr = [];
+        //        function biggerWords(str,strArr) {
+        //            for (var i = 0; i < strArr.length; i++) {
+        //                console.log("i is: " + i);
+        //                console.log("string.length: " + str.length);
+        //                if (strArr[i].length > str.length) {
+        //                    console.log("if statment " + i);
+        //                    emptyNewArr.push(strArr[i]);
+        //                }
+        //            }
+        //        }
+        //        biggerWords(bananaString,arrOStr);
+
+        //*** Level 2: (2) Numeric Spirals
+        function fibonacci_sequence(num) {
+            var a = 0, b = 1, f=1;
+            var arr= [a,b];
+            for(var i = 2; i < num; i++) {
+                f = a+b;
+                a = b;
+                b = f;
+                output = f;
+                arr.push(output);
+                console.log(arr);
+            }
+            return "This guy: "+ arr;
+        }
+        console.log(fibonacci_sequence(20));
+    </script>
+</head>
+<body></body>
+</html>
+
+
+
+
+
+
+
+

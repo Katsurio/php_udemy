@@ -13,7 +13,7 @@
 
 		
 	<article class="main-content col-xs-8">
-
+	
 	
 	<?php  
 
@@ -22,7 +22,6 @@
 		Step 2 - Use crypt() function to encrypt it
 
 		Step 3 - Assign the crypt result to a variable
-
 
 		Step 4 - echo the variable
 

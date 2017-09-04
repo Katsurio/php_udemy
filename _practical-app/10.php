@@ -22,7 +22,7 @@
 
 		Step 5: Instantiate the class / create object and call it pitbull
 
-		Step 6: Call the method ShowAll
+Step 6: Call the method ShowAll
 
 	
 

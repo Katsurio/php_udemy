@@ -14,9 +14,10 @@
 
 
 			<article class="main-content col-xs-8">
-
+			
+		
 	
-	<?php  
+	<?php 
 
 	/*  Create a link saying Click Here, and set 
 	the link href to pass some parameters and use the GET super global to see it
