@@ -21,7 +21,6 @@
 
 		  Step 2: Add the two variables and display the sum with echo:
 
-
 		  Step3: Make 2 Arrays with the same values, one regular and the other associative
 
 		  Step4: Make a constant and set it to the value of PHP. and use an echo to print it out
@@ -29,14 +28,18 @@
 		$number1 = 10;
 		$number2 = 20;
 
-		echo "$number1" + "$number2";
+		$sum = $number1 + $number2;
 
-		$numArr1 = [10,20];
+        echo $sum;
+
+        echo "<br>";
+
+		$numArr1 = [10, 20];
 		$numArr2 = ["num1" => "10", "num2" => "20"];
 
-        var_dump($numArr2);
+		define("ECHOED", "PHP");
 
-
+		echo ECHOED;
 
 		?>
 
