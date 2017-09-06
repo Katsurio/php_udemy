@@ -17,11 +17,10 @@
 /*  Step1: Make an if Statement with elseif and else to finally display string saying, I love PHP
 
 
+	Step 2: Make a forloop that displays 10 numbers
 
-	Step 2: Make a forloop  that displays 10 numbers
 
-
-	Step 3 : Make a switch Statement that test againts one condition with 5 cases
+	Step 3 : Make a switch Statement that tests against one condition with 5 cases
 
  */
     if(23 > 45) {
@@ -29,29 +28,28 @@
     } else if(23 < 45) {
         echo "Tis less than" . "<br>";
     } else {
-        echo "Tis undecided";
+        echo "I love PHP";
     }
 
     for ($index = 1; $index <= 10; $index++) {
         echo "$index" . "<br>";
     }
-    $message = "Insert message" . "<br>";
+
     switch (23) {
         case 45:
-            echo $message . "45" . "<br>";
+            echo "Your number is: 45" . "<br>";
             break;
         case 18:
-            echo $message . "18" . "<br>";
+            echo "Your number is: 18" . "<br>";
             break;
         case 33:
-            echo $message . "33" . "<br>";
+            echo "Your number is: 33" . "<br>";
             break;
         case 23:
-            echo $message . "23" . "<br>";
+            echo "Your number is: 23" . "<br>";
             break;
         default:
-            echo $message . "none of the above" . "<br>";
-            break;
+            echo "none of the above" . "<br>";
     }
 ?>
 

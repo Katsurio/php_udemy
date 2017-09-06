@@ -22,6 +22,15 @@
 
 
  */
+    function calculate($num1, $num2)
+    {
+        return "Dis be de sum, mon: " .($num1 + $num2);
+    }
+
+    $result = calculate(23, 45);
+
+    echo $result;
+
 
 	
 ?>
