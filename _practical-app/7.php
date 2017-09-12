@@ -4,13 +4,34 @@
 <?php
 $conn = mysqli_connect('localhost', 'root', 'root', 'pp_seven');
 
-$status = (function ()
-{
+$dbStatus = (function() {
     global $conn;
     if (!$conn) {
-        return die('DB connect failed: ' . mysqli_error($conn));
+        die('DB connect failed: ' . mysqli_error($conn));
     }
 })();
+
+function QueryStatus() {
+    global $conn;
+    $query = "SELECT * FROM users";
+    $result = mysqli_query($conn, $query);
+
+    if (!$result) {
+        die("Query FAILED: " . mysqli_error($conn));
+    }
+
+    while($row = mysqli_fetch_assoc($result)){
+        $username = $row['username'];
+        $password = $row['password'];
+
+        echo "<tr>
+                <td>$username</td>
+                <td>$password</td>
+             </tr> ";
+    }
+};
+
+
 ?>
 
 
@@ -41,11 +62,18 @@ $status = (function ()
         ?>
         <div class="row">
             <div class="col-sm-12">
-                <?= $status; ?>
-                <pre>
-
-                </pre>
-
+                <?= $dbStatus; ?>
+                <table class="col-xs-4" border="1">
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Password</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php QueryStatus(); ?>
+                    </tbody>
+                </table>
             </div>
         </div>
 
