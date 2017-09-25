@@ -1,10 +1,12 @@
-<?php 
+<?php
 
-echo $_POST['name'];
+if (isset($_POST['name'])) {
+    echo $_POST['name'];
+} else {
+    echo "Danger Will";
+}
 
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,13 +15,11 @@ echo $_POST['name'];
 </head>
 <body>
 
-<form action="the_post.php" method="post">
-   
-   <input type="tex" name="name">
-   
-   <input type="submit">
-    
-    
+<form action="58_the_post.php" method="post">
+
+    <input type="text" name="name">
+    <input type="submit">
+
 </form>
 
 

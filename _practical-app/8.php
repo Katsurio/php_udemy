@@ -26,7 +26,10 @@
 		Step 4 - echo the variable
 
 	*/
-	
+	$password = "Grizzles";
+    echo $password = password_hash($password, PASSWORD_DEFAULT);
+//    echo $password;
+
 	?>
 
 
